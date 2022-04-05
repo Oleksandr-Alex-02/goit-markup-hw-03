@@ -72,9 +72,7 @@ ul {
     color: var(--accent-color);
 }
 
-.site-nav{
-display: inline;
-}
+
 
 /* кантакты */
 .nav-list,
@@ -83,6 +81,18 @@ display: inline;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+}
+
+.site-nav {
+    display: inline-block;
+}
+
+.nav {
+    display: inline-block;
+}
+
+.nav:not(:last-child) {
+    margin-right: 20px;
 }
 
 .contact-list a {
@@ -98,15 +108,20 @@ display: inline;
     line-height: 1.87;
     letter-spacing: 0.06em;
 
+
     color: #ffffff;
     background-color: var(--accent-color);
 }
 
 .hero {
+
+    padding: 200px 0 280px;
     background: #2f303a;
 }
 
 .hero h1 {
+    margin: 0px auto;
+    text-align: center;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
