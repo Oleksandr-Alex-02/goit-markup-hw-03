@@ -18,23 +18,28 @@ body {
     color: var(--primary-text-color);
 }
 
-.container{
-
+.container {
     max-width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0 15px;
+    width: 100%;
+    margin: auto;
+    margin-top: 0;
 
-    
+    padding: 0 15px;
 }
 
-h1, h2, h3, h4{
+h1,
+h2,
+h3,
+h4 {
     margin-top: 0;
 }
 
 /* логотип */
 
 .logo-nav {
+    display: inline-block;
+    margin-right: 70px;
+
     font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
@@ -76,32 +81,39 @@ h1, h2, h3, h4{
 ul {
     list-style-type: none;
 }
+/* end ссылки */
 
 /* навигация сайта */
 
-.container-nav{
+.header-inner{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
 
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.nav-list{
+    margin-right: 281px;
     margin-top: 0;
-    width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-}
+    margin-bottom: 0;
+    padding-left: 0;
 
-.nav-list a{
-    margin: 0;
-    padding: 20px;
     display: flex;
 }
+.nav-item a{
+display: inline-block;
+padding: 20px 25px;
+}
 
-.nav-list,
+
+.site-nav, 
 .contact-list{
-    display: flex;
+    display: inline-block;
 }
-
 
 .nav-list .link:hover,
 .nav-list .link:focus,
@@ -110,25 +122,37 @@ ul {
     color: var(--accent-color);
 }
 
-
 /* кантакты */
+
+.contact-list{
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+}
+
+.contact-item a{
+    display: inline-block;
+    padding: 20px 25px;
+
+}
+
 .nav-list,
-.contact-list { 
+.contact-list {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
-
 .contact-list a {
     color: #757575;
 }
 
+/*конец навигации сайта */
 /*                                    mein index.html */
 
 /* герой */
-.button-hero { 
+.button-hero {
     width: 200px;
     height: 50px;
     margin-bottom: 200px;
@@ -156,7 +180,7 @@ ul {
     margin: auto;
     padding-top: 200px;
     margin-bottom: 30px;
-    
+
     text-align: center;
     font-weight: 900;
     font-size: 44px;
@@ -169,18 +193,19 @@ ul {
 
 /* особености нашей команды */
 
-.command-peculiarities{
+.command-peculiarities {
     margin-bottom: 97.68px;
 }
 
-.section-list{
+.section-list {
     display: flex;
     justify-content: space-around;
 
 }
- .section-list h3{
-     margin-bottom: 9.11px;
- }
+
+.section-list h3 {
+    margin-bottom: 9.11px;
+}
 
 .command-peculiarities h3 {
     font-weight: 700;
@@ -206,14 +231,14 @@ ul {
     color: var(--secondary-text-color);
 }
 
-.container h2{
+.container h2 {
     margin-bottom: 50px;
     text-align: center;
-    
+
     margin-bottom: 50px;
 }
 
-.projects-img{
+.projects-img {
     display: flex;
     margin-top: 0;
 }
